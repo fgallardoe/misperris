@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+
+<!--Hemos re-construido desde 0 el sitio orignal de mis perris, usando un mix de Jquery, JS y Materialize
+como framework, incluimos los iconos de y fuentes de materialdesing además de contar con los ccs a través de cdn
+hemos de igual modo creado un css personalizado para algunos ajustex extras del sitio-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>.::MisPerris::.</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="stilos.css">
+    <!-- Lato Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <!-- Stylesheet -->
+    <link href="https://cdn.shopify.com/s/files/1/1775/8583/t/1/assets/gallery-materialize.min.opt.css"
+        rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="JavaScript" href="Validacion.js">
+</head>
+
+<body class="grey lighten-3">
+    <div class="navbar-fixed container">
+        <nav class="green container">
+            <div class="nav-wrapper">
+                <a href="#Main" class="logo">
+                    <img src="img/logo.png" style="width: 200px; height: 40px; margin-top: .5em">
+                </a>
+                <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                    <i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#rescate">Quienes Somos</a></li>
+                    <li><a href="#campañas">Servicios</a></li>
+                    <li><a href="#rrss">Contactanos</a></li> </a>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--Aca se implementó el SIDENAV el cual despliega el menu de "hamburgesa" dejando un menu desplegable-->
+    <ul class="sidenav" id="menu-responsive">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#rescate">Quienes Somos</a></li>
+        <li><a href="#campañas">Servicios</a></li>
+        <li><a href="#rrss">Contactanos</a></li> </a>
+        </li>
+    </ul>
+
+
+
+    <!--Inicio del slider-->
+    <div class="container section">
+        <div class="row">
+            <div class="col s12">
+                <div class="slider">
+                    <ul class="slides">
+                        <li>
+                            <img class="responsive-img grey lighten-3" src="img/perro.png" width="500" height="100" >
+                            <div class="caption center-align">
+                                <h4 class="white-text">www.misPerris.cl</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/adoptados/Apolo.jpg">
+                            <div class="caption center-align">
+                                <h3 class="light-blue-text darken-4-text">El es Apolo...</h3>
+                                <h5 class="light grey-text text-lighten-3">Disfruntando de esta nueva oportunidad.</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/adoptados/Duque.jpg">
+                            <div class="caption left-align">
+                                <h3 class="light-blue-text darken-4-text">Duque</h3>
+                                <br><br><br><br><br>
+                                <h5 class="bold-text deep-orange-text text-accent-3left">una familia a todo terreno.</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/adoptados/Tom.jpg">
+                            <div class="caption bottom-align">
+                                <h3 class="blue-text">Tom</h3>
+                                <h4 class="black-text">El mejor inicio...</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Leyenda bajo el Slider-->
+    <div class="row-fixed container">
+        <div class="col s12 center">
+            <h5 class="green-text">Rescatamos Mascotas para darles una nueva vida...</h5>
+        </div>
+    </div>
+    </div>
+    <!--Fila solo estetica para dividir el sitio-->
+    <div class="row container">
+        <div  class="col s12 green ">
+        </div>
+    </div>
+    </div>
+
+    <!--Seccion Izquierda-->
+    <div  class="row container">
+        <div  id="rescate"  class="col s12 l6">
+            <br>
+                <h3>RESCATE</h3>
+            <img class="responsive-img middle" src="img/rescate.jpg" width="500" height="100" alt="perro">
+            
+            <H5>Etapa Uno:</H5>
+            <blockquote>
+                Rescatamos perros en situación de peligro y/o abandono. Los rehabilitamos y los preparamos para
+                buscarles un hogar.
+            </blockquote>
+        </div>
+
+        <!--Seccion Derecha-->
+        <div class="col s12 l6">
+            <br>
+            <h3>CROWFUNDING</h3>
+            
+            <img class="responsive-img" src="img/crowfunding.jpg" alt="perro">
+            
+            <h5>Financiamiento</h5>
+            <blockquote class="right">
+                Sigue nuestras redes sociales para informarte acerca de las diversas campañas y actividades que
+                realizamos para obtener financiamiento
+                para seguir ayudando.
+            </blockquote>
+            <br><br>
+            
+            <div class="secction center">
+                    <a class="green waves-effect waves-light btn modal-trigger" href="#modal2">Campañas</a>
+                    <!-- Modal Structure -->
+                    <div id="modal2" class="modal">
+                      <div class="modal-content">
+                            <div class="video-container">
+                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/yrwpicOITsk" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                      </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Divisor estético-->
+    <div id="campañas" class="row container">
+        <div class="col s12 green">
+        </div>
+    </div>
+
+    <!--Inicio de Galeria, una mezcla de tarjetas y galeria, la cual nos permitió ordenar segun el tamaño,
+ademas ahi hemos incorporado el menu de contacto con un Modal el cual despliega el formulario solicitado-->
+    <div id="portfolio">
+        <div class="db">
+            <div class="b e">
+                <div class="d hx hf gu gallery-item ce all">
+                    <div class="h green">
+                        <div class="card-content black-text">
+                            <span class="card-title">
+                                <h4>En Adopcion...</h4>
+                            </span>
+                            <p>los siguientes perritos estan en busqueda de un nuevo hogar...</p>
+                        </div>
+                        <div class="card-action">
+                            <a class="waves-effect red btn modal-trigger" href="#modal1">Mas Información</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Quiero Adoptar...</h4>
+                        <p>Llena el siguiente formulario para que recibas información de los Perritos que están en
+                            adopción.</p>
+                        <form action="#">
+                            <div class="row">
+                                <form class="col s12">
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <input id="email" type="email" class="validate">
+                                            <label for="email">Email</label>
+                                            <span class="helper-text" data-error="formato no valido" data-success=""></span>
+                                        </div>
+
+                                        <div class="input-field col s6">
+                                            <input type="text" id="rut" name="rut" required oninput="checkRut(this)"
+                                                placeholder="Ingrese RUT" class="validate">
+                                                <span class="helper-text" data-error="RUT Incorrecto" data-success=""></span>
+                                            <script src="Validacion.js"></script>
+                                        </div>
+
+                                        <div class="input-field col s12">
+                                            <input type="text" onkeypress="return soloLetras(event)" onblur="limpia()"
+                                                id="NombreFull" class="validate">
+                                            <label for="last_name">Nombre Completo</label>
+                                        </div>
+                                        <div class="input-field col s12 m6">
+                                            <input id="datefield" type='date' max='2000-12-31' class="validate">
+                                            <label for="fechanac">Fecha de Nacimiento</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12 m6">
+                                            <i class="material-icons prefix">phone</i>
+                                            <input id="icon_telephone" type="number" class="validate">
+                                            <label for="icon_telephone">Telefono</label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="input-field col s12">
+                                        <select>
+                                            <option value="" disabled selected>Seleccione Region...</option>
+                                            <option value="1">Arica y Parinacota</option>
+                                            <option value="2">Tarapaca</option>
+                                            <option value="3">Antofagasta</option>
+                                            <option value="3">Santiago</option>
+                                            <option value="3">De Los Rios</option>
+                                        </select>
+                                        <label>Región donde vives?</label>
+                                    </div>
+
+                                    <div class="input-field col s12">
+                                        <select>
+                                            <option value="" disabled selected>Seleccione Comuna...</option>
+                                            <option value="1">Arica</option>
+                                            <option value="2">Iquique</option>
+                                            <option value="3">Antofagasta</option>
+                                            <option value="3">Santiago</option>
+                                            <option value="3">Valdivia</option>
+                                        </select>
+                                        <label>Comuna donde vives?</label>
+                                    </div>
+
+                                    <p>
+                                        <p>Tipo de Vivienda:</p>
+                                        <label>
+                                            <input name="group1" type="radio" checked />
+                                            <span>Casa con Patio Grande</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input name="group1" type="radio" />
+                                            <span>Casa con Patio Pequeño </span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input name="group1" type="radio" />
+                                            <span>Casa sin Patio</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input name="group1" type="radio" />
+                                            <span>Departamento</span>
+                                        </label>
+                                    </p>
+                                </form>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="modal-close btn waves-effect waves-light red" type="submit" name="action"onclick="M.toast({html: 'Mensaje Enviado... Pronto te contactaremos!'})">Enviar
+                        <i class="material-icons right">send</i>    
+                    </button>
+                </div>
+            </div>
+
+            <!--Galeria como tal (imagenes)-->
+            <div class="d hx hf gu gallery-item ce overhead">
+                <div class="gallery-curve-wrapper">
+                    <a class="gallery-cover gray">
+                        <img class=" responsive-img" src="img/rescatados/Bigotes.jpg"  alt="placeholder">
+                    </a>
+                    <div class="gallery-header">
+                        <span>Bigotes</span>
+                        <p>Perro muy cariñoso y siempre esta buscando las caricias de los humanos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d hx hf gu gallery-item ce overhead">
+                <div class="gallery-curve-wrapper">
+                    <a class="gallery-cover gray">
+                        <img class="responsive-img" src="img/rescatados/Oso.jpg"  alt="placeholder">
+                    </a>
+                    <div class="gallery-header">
+                        <span>Oso</span>
+                        <p>Este hermoso cachorro busca una familia con mucho patio ya que es una raza grande. Algo timido, pero muy cariñoso</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d hx hf gu gallery-item ce overhead">
+                <div class="gallery-curve-wrapper">
+                    <a class="gallery-cover gray">
+                        <img class="responsive-img" src="img/rescatados/Luna.jpg"  alt="placeholder">
+                    </a>
+                    <div class="gallery-header">
+                        <span>Luna</span>
+                        <p>Hermosa perrita que busca el cariño de una familia de preferencia con niños</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d hx hf gu gallery-item ce overhead">
+                <div class="gallery-curve-wrapper">
+                    <a class="gallery-cover gray">
+                        <img class="responsive-img" src="img/rescatados/Chocolate.jpg" alt="placeholder">
+                    </a>
+                    <div class="gallery-header">
+                        <span>Chocolate</span>
+                        <p>Este perro adulto es muy sociable con los niños y es un buen guardian</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d hx hf gu gallery-item ce overhead">
+                <div class="gallery-curve-wrapper">
+                    <a class="gallery-cover gray">
+                        <img class="responsive-img" src="img/rescatados/Maya.jpg" alt="placeholder">
+                    </a>
+                    <div class="gallery-header">
+                        <span>Maya</span>
+                        <p>Adorable perrita que busca una familia con mucho espacio para poder jugar. Es muy activa y medio loca</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d hx hf gu gallery-item ce overhead">
+                <div class="gallery-curve-wrapper">
+                    <a class="gallery-cover gray">
+                        <img class="responsive-img" src="img/rescatados/Pexel.jpg"  alt="placeholder">
+                    </a>
+                    <div class="gallery-header">
+                        <span>Pexel</span>
+                        <p>Es muy jugueton e inquito. Ideal para departamentos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d hx hf gu gallery-item ce overhead">
+                <div class="gallery-curve-wrapper">
+                    <a class="gallery-cover gray">
+                        <img class="responsive-img" src="img/rescatados/Wifi.jpg" alt="placeholder">
+                    </a>
+                    <div class="gallery-header">
+                        <span>Wifi</span>
+                        <p>El pequeño wifi obtuvo su nombre por que anda en todos lados de la casa. Es ideal para espacios pequeños o con un patio pequeño</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+<!--MEnu de redes sociales -->
+<footer class="green container s12">
+
+    <div id="rrss"class="footer-social-icons">
+        <h5 class="white-text text-darken-2">Encuentranos en...</h5>
+            <ul class="social-icons">
+                <li><a href="http://facebook.com/misperris" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                <li><a href="http://twitter.com/misperris" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                <li><a href="http://youtube.com/misperris" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                <li><a href="http://linkedin.com" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                <li><a href="http://google.com/plus" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+            </ul>
+            <h6 class="white-text text-darken-2"> Llamanos al +569 999 99 99</h6>
+    </div>
+</footer>
+<div class="row container">
+<div class="col s8">
+        <p class="blue-text text-darken-2" style="margin-top: 5%">Desarrollado por : Felipe Gallardo - David Regular
+        </p>
+
+    </div>
+    <div class="col s4">
+        <br>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!" />
+
+    </div>
+</div>
+
+
+<!--Script e Inicializadores de JS y Materialize-->
+<!-- Compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/materialize/0.98.0/js/materialize.min.js"></script>
+<script src="https://cdn.shopify.com/s/files/1/1775/8583/t/1/assets/gallery.min.opt.js" crossOrigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+
+<script>
+    $(document).ready(function(){
+        $('.sidenav')
+            .sidenav()
+            .on('click tap', 'li a', () => {
+                $('.sidenav').sidenav('close');
+            });
+    });</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems);
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        M.AutoInit();
+    });
+</script>
+
+<script>
+    function soloLetras(e) {
+        key = e.keyCode || e.which;
+        tecla = String.fromCharCode(key).toLowerCase();
+        letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
+        especiales = [8, 37, 39, 46];
+
+        tecla_especial = false
+        for (var i in especiales) {
+            if (key == especiales[i]) {
+                tecla_especial = true;
+                break;
+            }
+        }
+
+        if (letras.indexOf(tecla) == -1 && !tecla_especial)
+            return false;
+    }
+
+    function limpia() {
+        var val = document.getElementById("miInput").value;
+        var tam = val.length;
+        for (i = 0; i < tam; i++) {
+            if (!isNaN(val[i]))
+                document.getElementById("miInput").value = '';
+        }
+    }
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('.datepicker').datepicker({
+            max: new Date(2001, 1, 1)
+        })
+    });
+</script>
+
+
+
+</html>
